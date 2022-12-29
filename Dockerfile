@@ -19,6 +19,10 @@ LABEL   MAINTENER="Muhammad Raihan" \
 LABEL   MAINTENER="Bayu Irfan Aditya" \
         NIM="1121130089" \
         KELAS="TI CN P 2021"
+      
+LABEL   MAINTENER="Dhea Wida Kamilah" \
+        NIM="1121130154" \
+        KELAS="TI CN P 2021"
 
 COPY html /usr/share/nginx/html
 
