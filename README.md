@@ -20,7 +20,7 @@
   - Tambahkan identitas anda, pada file berikut : 
    - **Dockerfile** : `Sesuaikan instruksi : LABEL`
    - **Json** di folder **html/team/json** : `Tambahkan file [nama Anda].json dan isi dengan data diri Anda`
-   - **index.html** di forder **team** : `Tambahkan path dari file .json yang sudah Anda buat di line : 118`
+   - **index.html** di folder **team** : `Tambahkan path dari file .json yang sudah Anda buat di line : 118`
 - Kemudian buat **Access Token** di dockerhub, untuk dihubungkan dengan **github action**
 - Setelah **Access Token** dibuat, pergi ke setting repository github Anda, dan tambahkan secret yang berisi _dockerhub Access Token_
   - `Settings -> Secrets -> Actions -> New Repository Secret`
