@@ -15,7 +15,7 @@
 ### Bagaimana cara menjalankannya :
 - Gunakan Fork untuk untuk menyalin repository ini dengan meng klik pada link berikut [https://github.com/global-institute/Company-Profile.git](https://github.com/global-institute/Company-Profile/fork)
 - Kemudian Clone repository yang sudah anda fork ke local pc anda
-  - `$ git clone https://github.com/global-institute/Company-Profile`
+  - `$ git clone [url-git-anda]`
 - Lalu ubah beberapa hal berikut :
   - Tambahkan identitas anda, pada file berikut : 
    - **Dockerfile** : `Sesuaikan instruksi : LABEL`
