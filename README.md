@@ -13,27 +13,28 @@
 - Text Editor (Visual Studio Code recommended)
 
 ### Bagaimana cara menjalankannya :
-- Fork repository ini dengan meng klik pada link berikut [https://github.com/global-institute/Company-Profile.git](https://github.com/global-institute/Company-Profile/fork)
-- Clone repository yang sudah anda fork ke local pc anda
-  - `$ git clone [url-git-anda.git]`
-- Ubah beberapa hal berikut :
-  - Ubah kata **[change me]** dengan indentitas anda, pada file berikut : 
+- Gunakan Fork untuk untuk menyalin repository ini dengan meng klik pada link berikut [https://github.com/global-institute/Company-Profile.git](https://github.com/global-institute/Company-Profile/fork)
+- Kemudian Clone repository yang sudah anda fork ke local pc anda
+  - `$ git clone https://github.com/global-institute/Company-Profile`
+- Lalu ubah beberapa hal berikut :
+  - Tambahkan identitas anda, pada file berikut : 
    - **Dockerfile** : `Sesuaikan instruksi : LABEL`
-   - **index.html** di forder **html** : `Ganti [change me] di line : 76 dan 172-175`
-- Buat **Access Token** di dockerhub, untuk dihubungkan dengan **github action**
-- Setting repository github, dan tambahkan secret yang berisi _dockerhub Access Token_
+   - **Json** di folder **html/team/json** : `Tambahkan file [nama Anda].json dan isi dengan data diri Anda`
+   - **index.html** di forder **team** : `Tambahkan path dari file .json yang sudah Anda buat di line : 118`
+- Kemudian buat **Access Token** di dockerhub, untuk dihubungkan dengan **github action**
+- Setelah **Access Token** dibuat, pergi ke setting repository github Anda, dan tambahkan secret yang berisi _dockerhub Access Token_
   - `Settings -> Secrets -> Actions -> New Repository Secret`
-- Buat file yang berlokasi di folder **.github/workflows/actions-workflow.yml**
-- Ubah dan sesuaikan _tag_, _repository_, _secrets_ pada file **actions-workflow.yml** 
-  - `sesuaikan [change me] dengan repository dockerhub anda masing-masing :`
-  - `docker build -t dockerhub_username/uas-pccks:latest -f Dockerfile .`
-  - `docker login -u ${{secrets.[dockerhub_username]}} -p ${{secrets.[dockerhub_AccessToken]}} && docker push dockerhub_username/image_name:latest`
+- Setelah itu buat file yang berlokasi di folder **.github/workflows/github-actions-.yml**
+- Lalu ubah dan sesuaikan _tag_, _repository_, _secrets_ pada file **actions-workflow.yml** 
+  - `sesuaikan nama username dockerhub dengan repository dockerhub anda masing-masing :`
+  - `docker build . --file Dockerfile --tag (dockerhub_username)/company-profile:v1`
+  - `docker login -u ${{secrets.[dockerhub_username]}} -p ${{secrets.[dockerhub_AccessToken]}} && docker push (dockerhub_username)/company-profile:v1`
 - Jika semua persiapan sudah selesai, silahkan push ke repository masing-masing
   - `git add .`
   - `git commit -m "commit message"`
   - `git push origin main`
-- Cek menu Action pada Github anda, pastikan tidak ada error
-- Jika github action berhasil, cek dockerhub anda seharusnya ada image baru dengan nama **uas-pccks:latest**
+- Kemudian cek menu Action pada Github anda, pastikan tidak ada error
+- Jika github action berhasil, cek dockerhub anda seharusnya ada image baru dengan nama **company-profile:v1**
 - Coba jalankan docker image yang anda buat di local docker machine ataupun docker playground
-  - `docker run -itd -p8080:80 dockerhub_username/docker_image`
-- dan buka web browser dengan port 8080, apakah muncul halaman web ?
+  - `docker run -itd -p8080:80 (dockerhub_username)/company-profile:v1`
+- Kemudian jalankan containers kalian di port 80:80 dengan cara klik `open in browser`
