@@ -11,6 +11,7 @@
 - Akun github
 - Akun dockerhub
 - Text Editor (Visual Studio Code recommended)
+- Doa Ibu
 
 ### Bagaimana cara menjalankannya :
 - Gunakan Fork untuk untuk menyalin repository ini dengan meng klik pada link berikut [https://github.com/global-institute/Company-Profile.git](https://github.com/global-institute/Company-Profile/fork)
