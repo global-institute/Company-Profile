@@ -16,7 +16,7 @@
 ### Bagaimana cara menjalankannya :
 - Gunakan Fork untuk untuk menyalin repository ini dengan meng klik pada link berikut [https://github.com/global-institute/Company-Profile.git](https://github.com/global-institute/Company-Profile/fork)
 - Kemudian Clone repository yang sudah anda fork ke local pc anda
-  - `$ git clone [url-git-anda]`
+  - `$ git clone [url-repositori-fork-anda]`
 - Lalu tambahkan informasi identitas anda di beberapa file berikut :
    - **Dockerfile** : `Sesuaikan instruksi : LABEL`
    - **Json** di folder **html/team/json** : `Tambahkan file [nama Anda].json dan isi dengan data diri Anda`
