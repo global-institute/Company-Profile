@@ -23,6 +23,10 @@ LABEL   MAINTENER="Bayu Irfan Aditya" \
 LABEL   MAINTENER="Dhea Wida Kamilah" \
         NIM="1121130154" \
         KELAS="TI CN P 2021"
+        
+LABEL   MAINTENER="change me" \
+        NIM="change me" \
+        KELAS="change me"
 
 COPY html /usr/share/nginx/html
 
