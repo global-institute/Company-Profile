@@ -6,6 +6,7 @@
 - Dimas Eurico (1121130041)
 - Bayu Irfan Aditya (1121130089)
 - Dhea Wida Kamilah (1121130154)
+- Dummy
 
 ### Apa yang dibutuhkan :
 - Akun github
