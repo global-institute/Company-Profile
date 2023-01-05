@@ -61,7 +61,7 @@ o	Settings -> Secrets -> Actions -> New Repository Secret
 •	Lalu ubah dan sesuaikan tag, repository, secrets pada file actions-workflow.yml
 o	sesuaikan nama username dockerhub dengan repository dockerhub anda masing-masing :
 o	docker build . --file Dockerfile --tag dockerhub-username/nama-image:tag
-o	docker login -u ${{secrets.[ DOCKERHUB_USERNAME]}} -p ${{secrets.[DOCKERHUB_SECRET]}} && docker push dockerhub-username/nama-image:tag
+o	docker login -u ${{secrets.[DOCKERHUB_USERNAME]}} -p ${{secrets.[DOCKERHUB_SECRET]}} && docker push dockerhub-username/nama-image:tag
 
 ![image](https://user-images.githubusercontent.com/104171054/210680833-22357261-4e68-4c85-a502-cd03976a5be7.png)
 
